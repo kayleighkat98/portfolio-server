@@ -32,7 +32,7 @@ This server is made to support my portfolio (you can find the link above). Use i
 * supertest
 ### Seed the database
 
-psql -U postgres -d kitchen_hero -f ./seeds/seed.tables.sql
+psql -U postgres -d portfolio -f ./seeds/seed.tables.sql
 
 
 

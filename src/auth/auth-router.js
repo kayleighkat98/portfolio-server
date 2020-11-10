@@ -25,7 +25,7 @@ authRouter
 
       if (!dbUser)
         return res.status(400).json({
-          error: 'Incorrect username. Try again or create an account.',
+          error: 'Incorrect username or password',
         })
 
       const compareMatch = await AuthService.comparePasswords(
