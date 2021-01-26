@@ -4,3 +4,4 @@ CREATE TABLE "user" (
   "password" TEXT NOT NULL,
   "name" TEXT NOT NULL
 );
+
