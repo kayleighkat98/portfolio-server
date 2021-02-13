@@ -1,12 +1,19 @@
+const TechService ={
+
+	getAll(db){//SELECT ALL TECH:
+	//SELECT * FROM tech;
+		return db('tech');
+	},
+	orderByASC(db, req){//SELECT ALL TECH IN SELECTED ORDER:
+	//SELECT * FROM tech ORDER BY label ASC;
+		return db('tech').orderBy(req);
+	}
+}
+
 /*
 
-SELECT ALL TECH IN ALPHABETICAL ORDER:
-SELECT * FROM tech ORDER BY label ASC;
-
-~~~~~~~~
-
 FIND ALL TECH USED BY A PROJECT:
-SELECT label FROM tech WHERE (project_id) = ANY (project_id)
+SELECT label FROM tech WHERE (req) = ANY (project_id)
 
 ~~~~~~~~
 
